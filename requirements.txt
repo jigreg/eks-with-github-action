@@ -1,5 +1,6 @@
 flake8
 pytest
+pytest-cov
 Flask
 requests
 urllib3==1.26.6
