@@ -1,8 +1,9 @@
 # Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
+# from random import randint
 
 from flask import Flask, render_template, request
-#from random import randint
+
 
 
 def shutdown_server():
