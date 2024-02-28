@@ -4,6 +4,7 @@
 
 from flask import Flask, render_template, request
 
+
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
     if func is None:

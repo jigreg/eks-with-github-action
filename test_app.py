@@ -16,7 +16,6 @@ class TestMyApp(unittest.TestCase):
         rv = self.app.get('/')
         assert rv.status == '200 OK'
         assert b'Welcome CTC!' in rv.data
-       # assert False
 
     def test_404(self):
         rv = self.app.get('/other')
