@@ -4,30 +4,24 @@
 
 from flask import Flask, render_template, request
 
-
-
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')
     if func is None:
         raise RuntimeError('Not running with the Werkzeug Server')
     func()
 
-
 myapp = Flask(__name__)
-
 
 @myapp.route('/shutdown', methods=['POST'])
 def shutdown():
     shutdown_server()
     return 'Server shutting down...'
 
-
 @myapp.route("/")
 def hello():
     #    return name
     return render_template(
         'test.html', **locals())
-
 
 if __name__ == "__main__":
     myapp.run(host='0.0.0.0', port=80)
