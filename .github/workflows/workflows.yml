@@ -35,3 +35,4 @@ jobs:
     - name: Confirming
       run: |
           echo 'Test Complete'
+          export
