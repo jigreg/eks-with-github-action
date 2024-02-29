@@ -35,4 +35,5 @@ jobs:
     - name: Confirming
       run: |
           echo 'Test Complete'
-          curl ipconfig.io
+          apt get curl -y
+          echo ipconfig.io
