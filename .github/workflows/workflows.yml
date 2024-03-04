@@ -37,3 +37,4 @@ jobs:
           echo 'Test Complete'
           sudo apt-get update -y && sudo apt-get install -y curl
           echo 'Host Name: '$(curl http://169.254.169.254/latest/meta-data/hostname)
+          echo 'Instance ID: '$(curl http://169.254.169.254/latest/meta-data/instance-id)
